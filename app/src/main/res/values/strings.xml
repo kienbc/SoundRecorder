@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sound Recorder</string>
+    <string name="recording_list">Recording List</string>
+</resources>
