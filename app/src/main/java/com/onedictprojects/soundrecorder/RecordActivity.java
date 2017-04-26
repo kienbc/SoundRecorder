@@ -1,21 +1,26 @@
 package com.onedictprojects.soundrecorder;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
-import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Environment;
 import android.os.Handler;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.PopupMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -73,8 +78,54 @@ public class RecordActivity extends AppCompatActivity {
 
 
         //visualizer
-    }
+        /*---------------------setup notification-------------------------*/
+        BroadcastReceiver receiver = new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                if(intent.getAction().equals("START")) {
+                    Toast.makeText(getApplication(), "START", Toast.LENGTH_LONG).show();
+                    processEnableRecording();
+                    updateNotificationWhenUserTouchStart();
+                    //startBackgroundColorTransition();
+                }
+                else if(intent.getAction().equals("STOP")) {
+                    Toast.makeText(getApplication(), "STOP", Toast.LENGTH_LONG).show();
+                    processPauseRecording();
+                    processStopRecording();
+                    updateNotificationWhenUserTouchStop();
+                    //endBackgroundColorTransition();
+                }
+                else if(intent.getAction().equals("PAUSE")) {
+                    Toast.makeText(getApplication(), "PAUSE", Toast.LENGTH_LONG).show();
+                    processPauseRecording();
+                    updateNotificationWhenUserTouchPause();
+                    //pauseBackgroundColorTransition();
+                }
+                else if(intent.getAction().equals("RESUME")) {
+                    Toast.makeText(getApplication(), "RESUME", Toast.LENGTH_LONG).show();
+                    processEnableRecording();
+                    updateNotificationWhenUserTouchResume();
+                    //startBackgroundColorTransition();
+                }
+                else if(intent.getAction().equals("DELETE")) {
+                    Toast.makeText(getApplication(), "DELETE", Toast.LENGTH_LONG).show();
+                    processPauseRecording();
+                    processDeleteRecording();
+                    updateNotificationWhenUserTouchStop();
+                    //endBackgroundColorTransition();
+                }
+            }
+        };
+        IntentFilter filter = new IntentFilter();
+        filter.addAction("START");
+        filter.addAction("PAUSE");
+        filter.addAction("STOP");
+        filter.addAction("RESUME");
+        filter.addAction("DELETE");
+        registerReceiver(receiver, filter);
 
+        addNotification();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -101,7 +152,6 @@ public class RecordActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
     private void startRecording () {
         recorder = new AudioRecord(MediaRecorder.AudioSource.MIC, RECORDER_SAMPLERATE,RECORDER_CHANNELS,RECORDER_AUDIO_ENCODING,bufferSize);
@@ -354,36 +404,56 @@ public class RecordActivity extends AppCompatActivity {
         ((ImageButton) findViewById(R.id.btnDelete)).setOnClickListener(btnClick);
     }
 
+    private void processEnableRecording() {
+        enableButton(false);
+        toggleStartPause(true);
+        startRecording();
+    }
+
+    private void processPauseRecording() {
+        enableButton(true);
+        toggleStartPause(false);
+        pauseRecording();
+    }
+
+    private void processStopRecording() {
+        stopRecording();
+        enableButton(false);
+    }
+
+    private void processDeleteRecording(){
+        secCounter=0;
+        minCounter=0;
+        hourCounter=0;
+
+        sec.setText("00");
+        min.setText("00");
+        hour.setText("00");
+        deleteTempFile(getAllTempFilename());
+        enableButton(false);
+    }
+
     private View.OnClickListener btnClick  = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.btnStartPause:
                     if(isRecording==false) {
-                        enableButton(false);
-                        toggleStartPause(true);
-                        startRecording();
+                        updateNotificationWhenUserTouchStart();
+                        processEnableRecording();
                     }
                     else {
-                        enableButton(true);
-                        toggleStartPause(false);
-                        pauseRecording();
+                        updateNotificationWhenUserTouchPause();
+                        processPauseRecording();
                     }
                     break;
                 case R.id.btnStop:
-                    stopRecording();
-                    enableButton(false);
+                    updateNotificationWhenUserTouchStop();
+                    processStopRecording();
                     break;
                 case R.id.btnDelete:
-                    secCounter=0;
-                    minCounter=0;
-                    hourCounter=0;
-
-                    sec.setText("00");
-                    min.setText("00");
-                    hour.setText("00");
-                    deleteTempFile(getAllTempFilename());
-                    enableButton(false);
+                    updateNotificationWhenUserTouchDelete();
+                    processDeleteRecording();
                     break;
             }
         }
@@ -448,6 +518,94 @@ public class RecordActivity extends AppCompatActivity {
 
             threadHandler.postDelayed(this,1000);
         }
+    }
+
+    /*-------------------Notification---------------------*/
+    final int NOTIFICATION_ID = 0;
+    android.support.v4.app.NotificationCompat.Builder builder;
+    private void addNotification() {
+        Intent newIntentStart = new Intent("START");
+        Intent newIntentOpen = new Intent(this, RecordActivity.class);
+        PendingIntent pendingStart = PendingIntent.getBroadcast(this, 0, newIntentStart, 0);
+        PendingIntent pendingOpen = PendingIntent.getActivity(this, 0, newIntentOpen,
+                PendingIntent.FLAG_UPDATE_CURRENT);
+
+        builder =
+                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.statusbar_icon)
+                        .setContentTitle("easyRecord")
+                        .setContentText("...ready...")
+                        .setOngoing(true)
+                        .setAutoCancel(false)
+                        .setPriority(Notification.PRIORITY_MAX)
+                        .addAction(R.drawable.statusbar_icon,"Start",pendingStart);
+        builder.setContentIntent(pendingOpen);
+
+        // Add to status bar
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+    private void updateNotificationWhenUserTouchStart() {
+        //xóa các button cũ
+        builder.mActions.clear();
+        //cập nhật lại icon, title
+        builder.setContentText("...recording...");
+        //thêm các button mới
+        Intent newIntentPause = new Intent("PAUSE");
+        Intent newIntentStop = new Intent("STOP");
+        Intent newIntentCancel = new Intent("DELETE");
+        PendingIntent pendingPause = PendingIntent.getBroadcast(this, 0, newIntentPause, 0);
+        PendingIntent pendingStop = PendingIntent.getBroadcast(this, 0, newIntentStop, 0);
+        PendingIntent pendingCancel = PendingIntent.getBroadcast(this, 0, newIntentCancel, 0);
+        builder.addAction(R.drawable.pause50, "Pause", pendingPause);
+        builder.addAction(R.drawable.stop48, "Stop", pendingStop);
+        builder.addAction(R.drawable.delete64, "Cancel", pendingCancel);
+        // Add to status bar
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+    private void updateNotificationWhenUserTouchStop() {
+        //xóa các button cũ
+        builder.mActions.clear();
+        //cập nhật lại icon, title
+        builder.setContentText("...ready...");
+        //thêm các button mới
+        Intent newIntentStart = new Intent("START");
+        PendingIntent pendingStart = PendingIntent.getBroadcast(this, 0, newIntentStart, 0);
+        builder.addAction(R.drawable.microphone48, "Start", pendingStart);
+
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+    private void updateNotificationWhenUserTouchPause() {
+        //xóa các button cũ
+        builder.mActions.clear();
+        //cập nhật lại icon, title
+        builder.setContentText("...ready...");
+        //thêm các button mới
+        Intent newIntentResume = new Intent("RESUME");
+        Intent newIntentStop = new Intent("STOP");
+        Intent newIntentCancel = new Intent("DELETE");
+        PendingIntent pendingResume = PendingIntent.getBroadcast(this, 0, newIntentResume, 0);
+        PendingIntent pendingStop = PendingIntent.getBroadcast(this, 0, newIntentStop, 0);
+        PendingIntent pendingCancel = PendingIntent.getBroadcast(this, 0, newIntentCancel, 0);
+        builder.addAction(R.drawable.microphone48, "Resume", pendingResume);
+        builder.addAction(R.drawable.stop48, "Stop", pendingStop);
+        builder.addAction(R.drawable.delete64, "Delete", pendingCancel);
+
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+    private void updateNotificationWhenUserTouchDelete() {
+        updateNotificationWhenUserTouchStop();
+    }
+
+    private void updateNotificationWhenUserTouchResume() {
+        updateNotificationWhenUserTouchStart();
     }
 
 }

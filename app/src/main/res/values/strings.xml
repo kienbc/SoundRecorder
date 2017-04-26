@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Sound Recorder</string>
+    <string name="app_name">easyRecord</string>
     <string name="recording_list">Recording List</string>
 </resources>
