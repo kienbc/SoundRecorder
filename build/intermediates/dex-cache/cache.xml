@@ -3,12 +3,30 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\My-PC\Documents\SoundRecorder\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\My-PC\Documents\SoundRecorder\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e21466da5f206807b0e8c436282a127ffb8fd195\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\My-PC\Desktop\SoundRecorder-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="06e892d839b5271ef3c5ad83b6f781c16bf7d23a">
         <dex dex="C:\Users\My-PC\Desktop\SoundRecorder-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_80a87b046fb36607d243688860f9eda8ac176277\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\My-PC\Documents\SoundRecorder\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="87c054accb139e5c4163cb9959959b4473685841">
+        <dex dex="C:\Users\My-PC\Documents\SoundRecorder\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_314697e787925426cb88b1ea2ea3dff7c03e4870\classes.dex" />
     </item>
     <item
         is-multidex="true"

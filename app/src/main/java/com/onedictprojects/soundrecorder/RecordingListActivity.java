@@ -1,5 +1,8 @@
 package com.onedictprojects.soundrecorder;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Environment;
 import android.os.Handler;
@@ -96,14 +99,18 @@ public class RecordingListActivity extends AppCompatActivity {
         }
     }
 
+    final Context context = this;
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
             case R.id.share:
                 Toast.makeText(getApplicationContext(),"Shared" + selectedAudioItem.getFilename(), Toast.LENGTH_SHORT).show();
+                DialogDetail dialog = DialogDetail.newInstance(selectedAudioItem);
+                dialog.show(getFragmentManager(),"dialog");
                 break;
             case R.id.delete:
+                showDeleteConfirmDialog();
                 break;
             case R.id.rename:
                 break;
@@ -114,6 +121,39 @@ public class RecordingListActivity extends AppCompatActivity {
         }
 
         return super.onContextItemSelected(item);
+    }
+
+    public void showDeleteConfirmDialog()
+    {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                context);
+
+        // set title
+        alertDialogBuilder.setTitle("Warning");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("Do you want to delete this file?")
+                .setCancelable(false)
+                .setPositiveButton("Yes",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, close
+                        selectedAudioItem.deleteFile();
+                    }
+                })
+                .setNegativeButton("No",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, just close
+                        // the dialog box and do nothing
+                        dialog.cancel();
+                    }
+                });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
     }
 
     @Override
@@ -135,7 +175,8 @@ public class RecordingListActivity extends AppCompatActivity {
         File[] files = dir.listFiles();
 
         for(int i=0;i<files.length;i++) {
-            AudioItem audioItem = new AudioItem("wav_file",files[i].getName(),files[i].getAbsolutePath());
+//            AudioItem audioItem = new AudioItem("wav_file",files[i].getName(),files[i].getAbsolutePath());
+            AudioItem audioItem = new AudioItem(files[i].getAbsolutePath());
             list.add(audioItem);
         }
 
