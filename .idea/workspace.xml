@@ -6,7 +6,65 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab5be572-76d3-4229-9d59-1b39cc30223a" name="Default" comment="" />
+    <list default="true" id="ab5be572-76d3-4229-9d59-1b39cc30223a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_integration_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javawriter_2_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation_api_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jsr305_2_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SoundRecorder-master.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-13-41-53-348.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-13-50-46-107.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-07-57-594.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-12-43-569.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-12-58-128.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-13-14-284.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-14-06-271.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-15-57-923.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-16-47-285.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-17-28-690.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-22-04-855.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-22-32-240.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-25-51-902.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-26-18-260.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-37-08-968.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-41-35-460.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-42-13-663.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-43-11-454.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-46-53-610.rawproto" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-04-26-14-53-00-280.rawproto" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-22.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-22.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+    </list>
     <ignored path="SoundRecorder.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,15 +95,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RecordActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecordActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-395">
-              <caret line="565" column="57" selection-start-line="565" selection-start-column="57" selection-end-line="565" selection-end-column="57" />
+            <state relative-caret-position="85">
+              <caret line="232" column="5" selection-start-line="232" selection-start-column="5" selection-end-line="232" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2800#4673#0" expanded="true" />
-                <element signature="e#4672#4673#0" expanded="true" />
+                <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -59,31 +115,18 @@
                 <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
                 <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
                 <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-                <element signature="e#21650#21651#0" expanded="true" />
-                <element signature="e#21703#21704#0" expanded="true" />
-                <element signature="e#21763#21764#0" expanded="true" />
-                <element signature="e#21817#21818#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecordingListActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-                <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
-                <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
-                <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -100,10 +143,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\My-PC\.gradle\wrapper\dists\gradle-3.3-all\55gk2rcmfc6p2dg9u9ohc3hw9\gradle-3.3" />
+        <entry key="$PROJECT_DIR$" value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -116,14 +162,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="SoundRecorder-master" />
+              <option name="name" value="SoundRecorder" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="SoundRecorder-master" />
+                <option name="name" value="SoundRecorder" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -141,7 +187,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'SoundRecorder-master'." />
+                <option name="description" value="Displays the sub-projects of root project 'SoundRecorder'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -180,7 +226,7 @@
                 <option name="name" value="assembleDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'SoundRecorder-master'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'SoundRecorder'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -190,7 +236,7 @@
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'SoundRecorder-master' (some of the displayed tasks may belong to subprojects)." />
+                <option name="description" value="Displays the tasks runnable from root project 'SoundRecorder' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -213,7 +259,7 @@
                 <option name="name" value="deviceCheck" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'SoundRecorder-master'." />
+                <option name="description" value="Displays all dependencies declared in root project 'SoundRecorder'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -278,7 +324,7 @@
                 <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'SoundRecorder-master'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'SoundRecorder'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -406,7 +452,7 @@
                 <option name="name" value="uninstallDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'SoundRecorder-master'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'SoundRecorder'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -692,12 +738,12 @@
                 <option name="name" value="generateDebugAssets" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'SoundRecorder-master'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'SoundRecorder'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'SoundRecorder-master'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'SoundRecorder'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -814,7 +860,7 @@
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'SoundRecorder-master'." />
+                <option name="description" value="Displays the properties of root project 'SoundRecorder'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -1500,6 +1546,7 @@
     </option>
     <option name="modificationStamps">
       <map>
+        <entry key="$PROJECT_DIR$" value="4479601512214" />
         <entry key="C:\Users\My-PC\Desktop\SoundRecorder-master" value="4479183880786" />
       </map>
     </option>
@@ -1515,13 +1562,13 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.0/gradle-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.0/gradle-core-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.0/builder-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.0/lint-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.1/gradle-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.1/gradle-core-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.1/builder-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.1/lint-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.0/gradle-api-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.0/compilerCommon-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.1/gradle-api-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.1/compilerCommon-2.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
@@ -1530,41 +1577,41 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jacoco/org.jacoco.report/0.7.5.201505241946/org.jacoco.report-0.7.5.201505241946.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.0/builder-model-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.0/builder-test-api-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.0/sdklib-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.0/sdk-common-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.0/common-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.0/manifest-merger-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.0/ddmlib-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.1/builder-model-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.1/builder-test-api-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.1/sdklib-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.1/sdk-common-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.1/common-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.1/manifest-merger-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.1/ddmlib-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.13.0/jack-api-0.13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.10.0/jill-api-0.10.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.0/protos-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.0/shared-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.0/tracker-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.1/protos-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.1/shared-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.1/tracker-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.0/lint-checks-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.1/lint-checks-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.0/baseLibrary-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.1/baseLibrary-2.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.0/annotations-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.1/annotations-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-debug-all/5.0.1/asm-debug-all-5.0.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.0/layoutlib-api-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.0/dvlib-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.0/repository-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.1/layoutlib-api-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.1/dvlib-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.1/repository-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.0/lint-api-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.1/lint-api-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.4/asm-analysis-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar" />
@@ -1584,13 +1631,13 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.0/gradle-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.0/gradle-core-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.0/builder-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.0/lint-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.1/gradle-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.1/gradle-core-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.1/builder-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.1/lint-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.0/gradle-api-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.0/compilerCommon-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.1/gradle-api-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.1/compilerCommon-2.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
@@ -1599,41 +1646,41 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jacoco/org.jacoco.report/0.7.5.201505241946/org.jacoco.report-0.7.5.201505241946.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.0/builder-model-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.0/builder-test-api-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.0/sdklib-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.0/sdk-common-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.0/common-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.0/manifest-merger-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.0/ddmlib-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.1/builder-model-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.1/builder-test-api-2.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.1/sdklib-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.1/sdk-common-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.1/common-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.1/manifest-merger-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.1/ddmlib-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.13.0/jack-api-0.13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.10.0/jill-api-0.10.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.0/protos-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.0/shared-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.0/tracker-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.1/protos-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.1/shared-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.1/tracker-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.0/lint-checks-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.1/lint-checks-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.0/baseLibrary-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.1/baseLibrary-2.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.0/annotations-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.1/annotations-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-debug-all/5.0.1/asm-debug-all-5.0.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.0/layoutlib-api-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.0/dvlib-25.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.0/repository-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.1/layoutlib-api-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.1/dvlib-25.3.1.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.1/repository-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpclient/4.1.1/httpclient-4.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.0/lint-api-25.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.1/lint-api-25.3.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.4/asm-analysis-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/jimfs/jimfs/1.1/jimfs-1.1.jar" />
@@ -1650,9 +1697,78 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="app" />
+              <option name="name" value="SoundRecorder" />
               <option name="projectBuildClasspath">
                 <list>
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/groovy-all-2.4.7.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-cli-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-messaging-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-resources-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-base-services-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-version-info-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-installation-beacon-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-wrapper-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/ant-1.9.6.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-tooling-api-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-script-kotlin-0.5.1.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-launcher-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-model-core-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-model-groovy-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-jvm-services-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-process-services-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-open-api-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-base-services-groovy-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-ui-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-docs-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-core-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-logging-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/gradle-native-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-platform-base-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-build-comparison-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-language-native-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-workers-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-testing-jvm-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-signing-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-osgi-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-jacoco-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-code-quality-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-ivy-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-maven-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-resources-http-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-language-jvm-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-language-scala-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-build-init-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-platform-native-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-resources-sftp-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-composite-builds-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-dependency-management-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-scala-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-javascript-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-ide-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-platform-jvm-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-platform-play-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-build-cache-http-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-language-java-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-antlr-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-ear-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-resources-s3-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-ide-play-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-announce-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-publish-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-plugin-use-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-test-kit-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-language-groovy-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-testing-base-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-plugins-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-ide-native-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-jetty-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-plugin-development-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-tooling-api-builders-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-reporting-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-diagnostics-3.3.jar" />
+                  <option value="$APPLICATION_HOME_DIR$/gradle/gradle-3.3/lib/plugins/gradle-testing-native-3.3.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -1677,22 +1793,22 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/popup.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_recording_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/VisualizerView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/VisualizerNew.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_file_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="-11" />
+    <option name="width" value="1366" />
+    <option name="height" value="779" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1719,71 +1835,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
+              <option name="myItemId" value="SoundRecorder" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
+              <option name="myItemId" value="SoundRecorder" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
+              <option name="myItemId" value="SoundRecorder" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1797,7 +1870,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
+              <option name="myItemId" value="SoundRecorder" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1813,31 +1886,20 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SoundRecorder-master" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
-    <property name="device.picker.selection" value="Galaxy_S8_API_25" />
+    <property name="device.picker.selection" value="Nexus_6_API_19" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlEditorPanel.WIDTH" value="224" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPropertiesWindowManager-NlEditorPanel.SHOW" value="false" />
@@ -2222,24 +2284,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="-11" width="1366" height="779" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.47583082" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.5241692" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4775641" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4775641" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22844176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5060423" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22809668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2256,6 +2317,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2271,18 +2333,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="990">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2296,14 +2365,230 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="71" column="79" selection-start-line="71" selection-start-column="79" selection-end-line="71" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2718">
+          <caret line="453" column="0" selection-start-line="453" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2315,7 +2600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2323,9 +2607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2334,9 +2615,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2350,14 +2629,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2366,7 +2649,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#669#687#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2375,9 +2660,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2391,14 +2674,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2410,7 +2697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2421,7 +2707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2430,9 +2715,7 @@
         <state relative-caret-position="1512">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2446,14 +2729,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2464,10 +2751,13 @@
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2478,9 +2768,7 @@
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2494,14 +2782,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2511,9 +2803,7 @@
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2527,14 +2817,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2544,9 +2838,7 @@
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2560,14 +2852,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2577,9 +2873,7 @@
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2593,14 +2887,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2611,10 +2909,13 @@
           <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2627,7 +2928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2659,7 +2959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2677,7 +2976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2696,7 +2994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2704,7 +3001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2712,7 +3008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2739,7 +3034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2750,7 +3044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2758,7 +3051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2769,7 +3061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2780,39 +3071,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/VisualizerView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_file_detail.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_file_detail.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
@@ -2820,6 +3087,9 @@
             <element signature="e#669#687#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml">
@@ -2829,18 +3099,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="124" column="45" selection-start-line="124" selection-start-column="45" selection-end-line="124" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/VisualizerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-395">
-          <caret line="565" column="57" selection-start-line="565" selection-start-column="57" selection-end-line="565" selection-end-column="57" />
+        <state relative-caret-position="85">
+          <caret line="232" column="5" selection-start-line="232" selection-start-column="5" selection-end-line="232" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2800#4673#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
@@ -2854,29 +3168,18 @@
             <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
             <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
             <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
-            <element signature="e#21650#21651#0" expanded="true" />
-            <element signature="e#21703#21704#0" expanded="true" />
-            <element signature="e#21763#21764#0" expanded="true" />
-            <element signature="e#21817#21818#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -56,7 +56,7 @@ public class RecordActivity extends AppCompatActivity {
 
     private int hourCounter = 0;
     private int minCounter = 0;
-    private int secCounter = 0;
+    private int secCounter = 0;//visualize
 
     Handler threadHandler = new Handler();
 
@@ -77,7 +77,6 @@ public class RecordActivity extends AppCompatActivity {
         threadHandler.postDelayed(updateThreadTimer,1000);
 
 
-        //visualizer
         /*---------------------setup notification-------------------------*/
         BroadcastReceiver receiver = new BroadcastReceiver() {
             @Override
