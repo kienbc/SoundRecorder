@@ -63,10 +63,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.onedictprojects.soundrecorder.VisualizerNew
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:id="@+id/visualizerNew" />
+        <com.onedictprojects.soundrecorder.Visualizer.CDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:soundEffectsEnabled="true" />
 
     </LinearLayout>
 

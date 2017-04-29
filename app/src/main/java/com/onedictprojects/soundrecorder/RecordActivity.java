@@ -15,12 +15,17 @@ import android.os.Handler;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.onedictprojects.soundrecorder.Visualizer.CDrawer;
+import com.onedictprojects.soundrecorder.Visualizer.CSampler;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -56,11 +61,21 @@ public class RecordActivity extends AppCompatActivity {
 
     private int hourCounter = 0;
     private int minCounter = 0;
-    private int secCounter = 0;//visualize
+    private int secCounter = 0;
 
     Handler threadHandler = new Handler();
 
+    // visualizer
 
+    private CDrawer.CDrawThread mDrawThread;
+    private CDrawer mdrawer;
+    private View.OnClickListener listener;
+    private Boolean m_bStart = Boolean.valueOf(false);
+    private Boolean recording;
+    private CSampler sampler;
+
+
+    // visualizer
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,6 +139,130 @@ public class RecordActivity extends AppCompatActivity {
         registerReceiver(receiver, filter);
 
         addNotification();
+
+        //========= Visualizer ============//
+
+        mdrawer = (CDrawer) findViewById(R.id.drawer);
+        m_bStart = Boolean.valueOf(false);
+
+        while (true) {
+            recording = Boolean.valueOf(false);
+            run();
+            return;
+        }
+
+        //========= Visualizer ============//
+
+    }
+
+    @Override
+    protected void onPause() {
+        sampler.SetRun(Boolean.valueOf(false));
+        mDrawThread.setRun(Boolean.valueOf(false));
+        sampler.SetSleeping(Boolean.valueOf(true));
+        mDrawThread.SetSleeping(Boolean.valueOf(true));
+        Boolean.valueOf(false);
+        super.onPause();
+
+    }
+
+    @Override
+    protected void onRestart() {
+        m_bStart = Boolean.valueOf(true);
+        super.onRestart();
+    }
+
+    @Override
+    protected void onResume()
+    {
+        System.out.println("onresume");
+        int i = 0;
+        while (true)
+        {
+            if ((sampler.GetDead2().booleanValue()) && (mdrawer.GetDead2().booleanValue()))
+            {
+                System.out.println(sampler.GetDead2() + ", " + mdrawer.GetDead2());
+                sampler.Restart();
+                if (!m_bStart.booleanValue())
+                    mdrawer.Restart(Boolean.valueOf(true));
+                sampler.SetSleeping(Boolean.valueOf(false));
+                mDrawThread.SetSleeping(Boolean.valueOf(false));
+                m_bStart = Boolean.valueOf(false);
+                super.onResume();
+                return;
+            }
+            try
+            {
+                Thread.sleep(500L);
+                System.out.println("Hang on..");
+                i++;
+                if (!sampler.GetDead2().booleanValue())
+                    System.out.println("sampler not DEAD!!!");
+                if (!mdrawer.GetDead2().booleanValue())
+                {
+                    System.out.println("mDrawer not DeAD!!");
+                    mdrawer.SetRun(Boolean.valueOf(false));
+                }
+                if (i <= 4)
+                    continue;
+                mDrawThread.SetDead2(Boolean.valueOf(true));
+            }
+            catch (InterruptedException localInterruptedException)
+            {
+                localInterruptedException.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onStart()
+    {
+        System.out.println("onstart");
+        super.onStart();
+    }
+
+    @Override
+    protected void onStop()
+    {
+        System.out.println("onstop");
+        super.onStop();
+    }
+
+    public void setBuffer(short[] paramArrayOfShort)
+    {
+        mDrawThread = mdrawer.getThread();
+        mDrawThread.setBuffer(paramArrayOfShort);
+    }
+
+    public void run()
+    {
+        try
+        {
+            if (mDrawThread == null)
+            {
+                mDrawThread = mdrawer.getThread();
+            }
+            if (sampler == null)
+                sampler = new CSampler(this);
+            Context localContext = getApplicationContext();
+            Display localDisplay = getWindowManager().getDefaultDisplay();
+            Toast localToast = Toast.makeText(localContext, "Please make some noise..", Toast.LENGTH_LONG);
+            localToast.setGravity(48, 0, localDisplay.getHeight() / 8);
+            localToast.show();
+            mdrawer.setOnClickListener(listener);
+            if (sampler != null){
+                try {
+                    sampler.Init();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+
+                sampler.StartRecording();
+                sampler.StartSampling();
+            }
+        } catch (NullPointerException e) {
+            Log.e("Main_Run", "NullPointer: " + e.getMessage());
+        }
     }
 
     @Override

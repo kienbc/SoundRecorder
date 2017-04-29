@@ -2,40 +2,58 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/kiencbui/.android/build-cache/c0f223cbf94660dba544ff661d3522082ce7399c/output/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/pre-dexed/debug/classes_48c2311709132600d0a99c172cf2b66b4e02bf01.jar" />
+        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_48c2311709132600d0a99c172cf2b66b4e02bf01/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
+        jar="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_00c4b3c09701bbb9048113bd4275502e2c308969/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/kiencbui/.android/build-cache/dc1c06f5dc970e2aacb05f3a95d6a368f2e58aae/output/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="f8efd0096475e0daf054267b61544e10dc776503">
-        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/pre-dexed/debug/classes_83fdec9116c03e0b36f39599c2c910c8d2ff99ff.jar" />
+        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_83fdec9116c03e0b36f39599c2c910c8d2ff99ff/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/kiencbui/.android/build-cache/dc1c06f5dc970e2aacb05f3a95d6a368f2e58aae/output/jars/libs/internal_impl-22.2.1.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
-        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1_329628d15e63852208a9a8c67bdc9a4b4ea8a15d.jar" />
+        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.1_329628d15e63852208a9a8c67bdc9a4b4ea8a15d/classes.dex" />
     </item>
     <item
-        is-multidex="false"
+        is-multidex="true"
         jar="/home/kiencbui/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
-        jumboMode="false"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1_b9a8d991f51d29be0a7b77e3cca5920b0c6f0eab.jar" />
+        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.1_b9a8d991f51d29be0a7b77e3cca5920b0c6f0eab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de7086f44f22f7610fc84c29a424b4863aa33e8d">
+        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c60cc14a972b86786fd7a4d80053191ed793b718/classes.dex" />
     </item>
 
 </items>
