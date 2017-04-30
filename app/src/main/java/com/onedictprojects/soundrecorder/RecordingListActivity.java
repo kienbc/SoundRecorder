@@ -107,10 +107,10 @@ public class RecordingListActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.share:
-                Intent intentShareFile = new Intent(Intent.ACTION_SEND);
-                intentShareFile.setType("audio/*");
-                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse(selectedAudioItem.getPath()));
-                startActivity(Intent.createChooser(intentShareFile,"Share audio to..."));
+                Intent intentShare = new Intent(Intent.ACTION_SEND);
+                intentShare.setType("audio/*");
+                intentShare.putExtra(Intent.EXTRA_STREAM,Uri.parse(selectedAudioItem.getPath()));
+                startActivity(Intent.createChooser(intentShare,"Share audio to..."));
                 break;
             case R.id.delete:
                 showDeleteConfirmDialog();
