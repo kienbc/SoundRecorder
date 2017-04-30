@@ -59,17 +59,17 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
 
-        <com.onedictprojects.soundrecorder.Visualizer.CDrawer
-        android:id="@+id/drawer"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:soundEffectsEnabled="true" />
+        <!--<com.onedictprojects.soundrecorder.Visualizer.CDrawer-->
+        <!--android:id="@+id/drawer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:soundEffectsEnabled="true" />-->
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -165,13 +165,13 @@ public class RecordActivity extends AppCompatActivity {
 //        super.onPause();
 //
 //    }
-
+//
 //    @Override
 //    protected void onRestart() {
 //        m_bStart = Boolean.valueOf(true);
 //        super.onRestart();
 //    }
-
+//
 //    @Override
 //    protected void onResume()
 //    {
@@ -227,13 +227,13 @@ public class RecordActivity extends AppCompatActivity {
 //        System.out.println("onstop");
 //        super.onStop();
 //    }
-
+//
 //    public void setBuffer(short[] paramArrayOfShort)
 //    {
 //        mDrawThread = mdrawer.getThread();
 //        mDrawThread.setBuffer(paramArrayOfShort);
 //    }
-
+//
 //    public void run()
 //    {
 //        try

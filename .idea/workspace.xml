@@ -7,11 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab5be572-76d3-4229-9d59-1b39cc30223a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-22.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-22.jar" />
@@ -19,6 +19,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSampler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSampler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml" />
     </list>
     <ignored path="SoundRecorder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,12 +53,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RecordActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecordActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="255" column="42" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="349">
+              <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+              <folding>
+                <element signature="e#2207#2220#0" expanded="false" />
+                <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+                <element signature="e#5422#5459#0" expanded="false" />
+                <element signature="e#5751#5766#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+                <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+                <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecordingListActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="112" column="82" selection-start-line="112" selection-start-column="82" selection-end-line="112" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+                <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,6 +126,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -1726,14 +1784,14 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/VisualizerNew.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_file_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java" />
         <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSampler.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSleeper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CDrawer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSampler.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java" />
       </list>
     </option>
   </component>
@@ -1784,6 +1842,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SoundRecorder" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2227,6 +2307,14 @@
       <option name="presentableId" value="Default" />
       <updated>1490498898735</updated>
     </task>
+    <task id="LOCAL-00001" summary="tắc visualizer">
+      <created>1493557975827</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493557975827</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2238,8 +2326,9 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258427" sideWeight="0.5241692" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66452646" sideWeight="0.5151057" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854986" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4775641" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2251,7 +2340,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6650641" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66452646" sideWeight="0.48489425" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2263,7 +2352,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854986" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2280,7 +2368,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Thêm visualizer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Thêm visualizer" />
+    <MESSAGE value="tắc visualizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="tắc visualizer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2297,7 +2386,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
@@ -2311,7 +2399,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2323,7 +2441,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
@@ -2337,7 +2454,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2718">
           <caret line="453" column="0" selection-start-line="453" selection-start-column="0" selection-end-line="453" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2349,7 +2496,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
@@ -2363,7 +2509,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2382,7 +2558,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2398,7 +2604,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2426,7 +2662,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2438,7 +2704,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
@@ -2452,7 +2717,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2460,7 +2755,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2468,7 +2793,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2476,7 +2831,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1206">
           <caret line="322" column="5" selection-start-line="322" selection-start-column="5" selection-end-line="322" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2488,7 +2873,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
             <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
@@ -2661,14 +3045,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/VisualizerView.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/DialogDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -2678,68 +3054,6 @@
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3393">
-          <caret line="200" column="38" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSampler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Init#0;class#CSampler#0" expanded="false" />
-            <element signature="method#Restart#0;class#CSampler#0" expanded="false" />
-            <element signature="method#SetRun#0;class#CSampler#0" expanded="false" />
-            <element signature="method#StartRecording#0;class#CSampler#0" expanded="false" />
-            <element signature="method#StartSampling#0;class#CSampler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSleeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-127">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
-            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/popup.xml">
@@ -2753,11 +3067,107 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/DialogDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSampler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Init#0;class#CSampler#0" expanded="false" />
+            <element signature="method#Restart#0;class#CSampler#0" expanded="false" />
+            <element signature="method#SetRun#0;class#CSampler#0" expanded="false" />
+            <element signature="method#StartRecording#0;class#CSampler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CSleeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/Visualizer/CDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="200" column="38" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_record.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="255" column="42" selection-start-line="255" selection-start-column="42" selection-end-line="255" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="349">
+          <caret line="272" column="0" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+          <folding>
+            <element signature="e#2207#2220#0" expanded="false" />
+            <element signature="method#onCreate#0;class#RecordActivity#0" expanded="false" />
+            <element signature="e#5422#5459#0" expanded="false" />
+            <element signature="e#5751#5766#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#startRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeAudioToFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#pauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#stopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#copyWaveFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#writeWaveFileHeader#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#deleteTempFile#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getAllTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#getTempFilename#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#setButtonHandlers#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processEnableRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processPauseRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processStopRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#processDeleteRecording#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#toggleStartPause#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#enableButton#1;class#RecordActivity#0" expanded="false" />
+            <element signature="class#UpdateThreadTimer#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#addNotification#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStart#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchStop#0;class#RecordActivity#0" expanded="false" />
+            <element signature="method#updateNotificationWhenUserTouchPause#0;class#RecordActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/onedictprojects/soundrecorder/RecordingListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="112" column="82" selection-start-line="112" selection-start-column="82" selection-end-line="112" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateContextMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#getAllFileName#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#playAudio#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#run#0;class#UpdateSeekbarThread#0;class#RecordingListActivity#0" expanded="false" />
+            <element signature="method#pauseAudio#0;class#RecordingListActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

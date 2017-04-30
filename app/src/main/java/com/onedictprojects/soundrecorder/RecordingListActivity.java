@@ -3,7 +3,9 @@ package com.onedictprojects.soundrecorder;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -105,9 +107,10 @@ public class RecordingListActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.share:
-                Toast.makeText(getApplicationContext(),"Shared" + selectedAudioItem.getFilename(), Toast.LENGTH_SHORT).show();
-                DialogDetail dialog = DialogDetail.newInstance(selectedAudioItem);
-                dialog.show(getFragmentManager(),"dialog");
+                Intent intentShareFile = new Intent(Intent.ACTION_SEND);
+                intentShareFile.setType("audio/*");
+                intentShareFile.putExtra(Intent.EXTRA_STREAM, Uri.parse(selectedAudioItem.getPath()));
+                startActivity(Intent.createChooser(intentShareFile,"Share audio to..."));
                 break;
             case R.id.delete:
                 showDeleteConfirmDialog();
@@ -117,6 +120,8 @@ public class RecordingListActivity extends AppCompatActivity {
             case R.id.sync:
                 break;
             case R.id.detail:
+                DialogDetail dialog = DialogDetail.newInstance(selectedAudioItem);
+                dialog.show(getFragmentManager(),"dialog");
                 break;
         }
 

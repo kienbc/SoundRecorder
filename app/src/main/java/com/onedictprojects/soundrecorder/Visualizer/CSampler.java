@@ -168,7 +168,7 @@ public class CSampler
                         return;
                     }
                     Sample();
-                    m_ma.setBuffer(CSampler.buffer);
+                    //m_ma.setBuffer(CSampler.buffer);
                 }
             }
         };
