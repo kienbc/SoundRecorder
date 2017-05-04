@@ -10,7 +10,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Created by kiencbui on 21/04/2017.
+ * Created by kienkiki on 21/04/2017.
  */
 
 public class AudioItem {
@@ -27,7 +27,17 @@ public class AudioItem {
         this.path = path;
     }
 
-    SimpleDateFormat dateFormatter = new SimpleDateFormat("EEEE, MMMM d, yyyy");
+    public AudioItem()
+    {
+        this.fileType="";
+        this.filename="";
+        this.path="";
+        this.duration="";
+        this.dateModified="";
+        this.size="";
+    }
+
+    static SimpleDateFormat dateFormatter = new SimpleDateFormat("EEEE, MMMM d, yyyy");
     public AudioItem(String path) {
         File f = new File(path);
         Date lastModified = new Date(f.lastModified());
@@ -95,8 +105,8 @@ public class AudioItem {
         String durationStr = mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
         int millSecond = Integer.parseInt(durationStr);
         int t = millSecond/1000;
-        int m = t/60;
-        int s = t&60;
+        int m = t / 60;
+        int s = t % 60;
         String res="";
         if(m<10)
             res = "0" + m + ":";
@@ -125,5 +135,13 @@ public class AudioItem {
     public void deleteFile() {
         File f = new File(this.path);
         if(f.exists()) f.delete();
+    }
+
+    public void renameFile(String newname) {
+        File from = new File(this.path);
+        String parentDirectory = from.getParent();
+        File to = new File(parentDirectory, newname);
+        if(from.exists())
+            from.renameTo(to);
     }
 }

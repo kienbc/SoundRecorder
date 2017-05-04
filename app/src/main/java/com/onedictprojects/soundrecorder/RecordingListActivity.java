@@ -1,6 +1,7 @@
 package com.onedictprojects.soundrecorder;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,17 +12,16 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.support.v7.widget.PopupMenu;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,11 +32,11 @@ import java.util.List;
 
 public class RecordingListActivity extends AppCompatActivity {
 
-    List<AudioItem> adapter = null;
-
-    ListView listView = null;
+    List<AudioItem> itemsList = null;
+    CustomListAdapter adapter = null;
+    ListView listviewItems = null;
     MediaPlayer player = null;
-    AudioItem selectedAudioItem = new AudioItem("","","");
+    AudioItem selectedAudioItem = new AudioItem();
 
     ImageButton imageButtonPlayPause;
     SeekBar seekBar;
@@ -70,15 +70,16 @@ public class RecordingListActivity extends AppCompatActivity {
         seekBar = (SeekBar) findViewById(R.id.seekBar);
         seekBar.setClickable(false);
 
-        adapter = getAllFileName();
-        listView= (ListView) findViewById(R.id.lvRecording);
-        listView.setAdapter(new CustomListAdapter(adapter,this));
+        itemsList = getAllFileName();
+        listviewItems = (ListView) findViewById(R.id.lvRecording);
+        adapter = new CustomListAdapter(itemsList,this);
+        listviewItems.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listviewItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
-                Object o = listView.getItemAtPosition(position);
+                Object o = listviewItems.getItemAtPosition(position);
                 AudioItem item = (AudioItem) o;
                 currentAudioFilePath = item.getPath();
                 isNewAudio = true;
@@ -86,15 +87,22 @@ public class RecordingListActivity extends AppCompatActivity {
                 playAudio(currentAudioFilePath);
             }
         });
+        listviewItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                index = position;
+                return false;
+            }
+        });
 
-        registerForContextMenu(listView);
+        registerForContextMenu(listviewItems);
     }
 
     @Override
     public void onCreateContextMenu(ContextMenu menu,View v,ContextMenu.ContextMenuInfo menuInfo) {
         if(v.getId()==R.id.lvRecording) {
             AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
-            selectedAudioItem = adapter.get(info.position);
+            selectedAudioItem = itemsList.get(info.position);
 
             super.onCreateContextMenu(menu,v,menuInfo);
             getMenuInflater().inflate(R.menu.popup,menu);
@@ -102,9 +110,9 @@ public class RecordingListActivity extends AppCompatActivity {
     }
 
     final Context context = this;
+    static int index = -1;
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
             case R.id.share:
                 Intent intentShare = new Intent(Intent.ACTION_SEND);
@@ -116,6 +124,7 @@ public class RecordingListActivity extends AppCompatActivity {
                 showDeleteConfirmDialog();
                 break;
             case R.id.rename:
+                showRenameDialog();
                 break;
             case R.id.sync:
                 break;
@@ -128,8 +137,7 @@ public class RecordingListActivity extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
-    public void showDeleteConfirmDialog()
-    {
+    public void showDeleteConfirmDialog() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
                 context);
 
@@ -144,6 +152,8 @@ public class RecordingListActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog,int id) {
                         // if this button is clicked, close
                         selectedAudioItem.deleteFile();
+                        itemsList.remove(selectedAudioItem);
+                        adapter.notifyDataSetChanged();
                     }
                 })
                 .setNegativeButton("No",new DialogInterface.OnClickListener() {
@@ -151,6 +161,7 @@ public class RecordingListActivity extends AppCompatActivity {
                         // if this button is clicked, just close
                         // the dialog box and do nothing
                         dialog.cancel();
+
                     }
                 });
 
@@ -159,6 +170,44 @@ public class RecordingListActivity extends AppCompatActivity {
 
         // show it
         alertDialog.show();
+    }
+
+    void showRenameDialog() {
+        // custom dialog
+        final Dialog dialog = new Dialog(context);
+        dialog.setContentView(R.layout.dialog_rename);
+        dialog.setTitle("................Rename.................");
+
+        // set the custom dialog components - text, image and button
+        final TextView txtNewname = (TextView) dialog.findViewById(R.id.txtNewname);
+        String[] tmp = selectedAudioItem.getFilename().split("\\.");
+        txtNewname.setText(tmp[0]);
+        txtNewname.setSelectAllOnFocus(true);
+        Button dialogButton = (Button) dialog.findViewById(R.id.btnOK);
+        // if button is clicked, close the custom dialog
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String strNewname = txtNewname.getText().toString() + "." + selectedAudioItem.getFileType();
+                selectedAudioItem.renameFile(strNewname);
+                renameItem(index, strNewname);
+                //adapter.notifyDataSetChanged();
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+    }
+
+    void renameItem(int index, String newName){
+        //View v = listviewItems.getChildAt(index - listviewItems.getFirstVisiblePosition());
+        View v = listviewItems.getChildAt(index);
+        if(v == null)
+            return;
+
+        TextView filename = (TextView) v.findViewById(R.id.listitem_textview_filename);
+            if(filename != null)
+            filename.setText(newName);
     }
 
     @Override

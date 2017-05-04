@@ -46,8 +46,8 @@ public class CustomListAdapter extends BaseAdapter {
         if(convertView==null) {
             convertView = layoutInflater.inflate(R.layout.list_item_layout,null);
             holder=new ViewHolder();
-            holder.fileType=(ImageView) convertView.findViewById(R.id.imageView_filetype);
-            holder.fileName=(TextView) convertView.findViewById(R.id.textView_filename);
+            holder.fileType=(ImageView) convertView.findViewById(R.id.listitem_imageview_filetype);
+            holder.fileName=(TextView) convertView.findViewById(R.id.listitem_textview_filename);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder)convertView.getTag();
