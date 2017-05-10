@@ -109,10 +109,11 @@ public class AudioItem {
         int s = t % 60;
         String res="";
         if(m<10)
-            res = "0" + m + ":";
+            res += "0" + m + ":";
+        else res += m;
         if(s<10)
             res += "0" + s;
-
+        else res += s;
         return res;
     }
 

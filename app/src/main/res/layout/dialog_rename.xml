@@ -3,13 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:textSize="20dp"
-        android:text="................Rename................."/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +15,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:text="OK"
         android:id="@+id/btnOK"/>
 

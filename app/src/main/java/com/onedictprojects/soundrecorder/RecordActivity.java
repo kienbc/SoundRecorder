@@ -621,7 +621,7 @@ public class RecordActivity extends AppCompatActivity {
         enableButton(R.id.btnStop,isRecording);
         enableButton(R.id.btnDelete,isRecording);
     }
-
+    private String strTimer;
     class UpdateThreadTimer implements Runnable {
         public void run() {
             if(isRecording) {
@@ -652,6 +652,8 @@ public class RecordActivity extends AppCompatActivity {
                             hour.setText(String.valueOf(hourCounter));
                     }
                 }
+                strTimer = hour.getText().toString() + ":" + min.getText().toString()+ ":" + sec.getText().toString();
+                updateNotificationContent(strTimer);
             }
 
             threadHandler.postDelayed(this,1000);
@@ -746,4 +748,10 @@ public class RecordActivity extends AppCompatActivity {
         updateNotificationWhenUserTouchStart();
     }
 
+    private void updateNotificationContent(String content)
+    {
+        builder.setContentText(content);
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(NOTIFICATION_ID, builder.build());
+    }
 }

@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -191,7 +192,6 @@ public class RecordingListActivity extends AppCompatActivity {
                 String strNewname = txtNewname.getText().toString() + "." + selectedAudioItem.getFileType();
                 selectedAudioItem.renameFile(strNewname);
                 renameItem(index, strNewname);
-                //adapter.notifyDataSetChanged();
                 dialog.dismiss();
             }
         });
@@ -206,9 +206,25 @@ public class RecordingListActivity extends AppCompatActivity {
             return;
 
         TextView filename = (TextView) v.findViewById(R.id.listitem_textview_filename);
-            if(filename != null)
+        if(filename != null)
             filename.setText(newName);
+        //refreshVisibleViews();
+        listviewItems.setAdapter(listviewItems.getAdapter());
     }
+
+    void refreshVisibleViews() {
+        if (adapter != null) {
+            for (int i = listviewItems.getFirstVisiblePosition(); i <= listviewItems.getLastVisiblePosition(); i ++) {
+                final int dataPosition = i - listviewItems.getHeaderViewsCount();
+                final int childPosition = i - listviewItems.getFirstVisiblePosition();
+                if (dataPosition >= 0 && dataPosition < adapter.getCount()
+                        && listviewItems.getChildAt(childPosition) != null) {
+                    adapter.getView(dataPosition, listviewItems.getChildAt(childPosition), listviewItems);
+                }
+            }
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
