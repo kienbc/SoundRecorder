@@ -22,7 +22,6 @@ public class DialogDetail extends DialogFragment{
     static DialogDetail newInstance(AudioItem curSelItem) {
         DialogDetail f = new DialogDetail();
 
-        // Supply num input as an argument.
         Bundle args = new Bundle();
         args.putString("name", curSelItem.getFilename());
         args.putString("type", curSelItem.getFileType());

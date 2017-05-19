@@ -2,8 +2,10 @@ package com.onedictprojects.soundrecorder;
 
 import android.media.MediaMetadataRetriever;
 import android.net.Uri;
+import android.text.format.DateUtils;
 
 import java.io.File;
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -13,7 +15,7 @@ import java.util.Locale;
  * Created by kienkiki on 21/04/2017.
  */
 
-public class AudioItem {
+public class AudioItem implements Serializable{
     private String fileType;
     private String filename;
     private String path;
@@ -103,17 +105,8 @@ public class AudioItem {
         MediaMetadataRetriever mmr = new MediaMetadataRetriever();
         mmr.setDataSource(path);
         String durationStr = mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
-        int millSecond = Integer.parseInt(durationStr);
-        int t = millSecond/1000;
-        int m = t / 60;
-        int s = t % 60;
-        String res="";
-        if(m<10)
-            res += "0" + m + ":";
-        else res += m;
-        if(s<10)
-            res += "0" + s;
-        else res += s;
+        int timeInMilisec = Integer.parseInt(durationStr);
+        String res = DateUtils.formatElapsedTime(timeInMilisec/1000);
         return res;
     }
 

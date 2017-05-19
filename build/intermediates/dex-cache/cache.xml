@@ -2,22 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\My-PC\.android\build-cache\05518917369c5a059efb67ff57ea3dab641fdf38\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_00c4b3c09701bbb9048113bd4275502e2c308969/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="16da2593146c42b59824eeaf8e2b6e0ec7178e6f">
-        <dex dex="/home/kiencbui/AndroidStudioProjects/SoundRecorder/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c60cc14a972b86786fd7a4d80053191ed793b718/classes.dex" />
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="C:\Users\My-PC\Documents\SoundRecorder\app\build\intermediates\pre-dexed\debug\classes_87ea9a13cf5e36dc875bfb09d4ebe0a26ddef3c1.jar" />
     </item>
 
 </items>

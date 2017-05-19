@@ -12,14 +12,15 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -40,7 +41,6 @@ public class RecordingListActivity extends AppCompatActivity {
     AudioItem selectedAudioItem = new AudioItem();
 
     ImageButton imageButtonPlayPause;
-    SeekBar seekBar;
     TextView textViewFileNamePlaying = null;
     Handler threadHandler = new Handler();
 
@@ -48,7 +48,7 @@ public class RecordingListActivity extends AppCompatActivity {
     boolean isNewAudio = false;
     boolean isPlayed = false;
     String currentAudioFilePath = null;
-
+    LinearLayout mpLayout;
 
 
     @Override
@@ -56,6 +56,18 @@ public class RecordingListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recording_list);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        mpLayout = (LinearLayout) findViewById(R.id.mediaPlayerLayout);
+        mpLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMediaPlayer = new Intent(RecordingListActivity.this, MediaPlayerActivity.class);
+                Bundle file = new Bundle();
+                file.putSerializable("file", selectedAudioItem);
+                intentMediaPlayer.putExtra("Package", file);
+                startActivity(intentMediaPlayer);
+            }
+        });
 
         imageButtonPlayPause = (ImageButton) findViewById(R.id.imageButton_playPause);
         textViewFileNamePlaying= (TextView) findViewById(R.id.textView_filenamePlaying);
@@ -68,8 +80,6 @@ public class RecordingListActivity extends AppCompatActivity {
                 else playAudio(currentAudioFilePath);
             }
         });
-        seekBar = (SeekBar) findViewById(R.id.seekBar);
-        seekBar.setClickable(false);
 
         itemsList = getAllFileName();
         listviewItems = (ListView) findViewById(R.id.lvRecording);
@@ -118,7 +128,8 @@ public class RecordingListActivity extends AppCompatActivity {
             case R.id.share:
                 Intent intentShare = new Intent(Intent.ACTION_SEND);
                 intentShare.setType("audio/*");
-                intentShare.putExtra(Intent.EXTRA_STREAM,Uri.parse(selectedAudioItem.getPath()));
+                File f = new File(selectedAudioItem.getPath());
+                intentShare.putExtra(Intent.EXTRA_STREAM,Uri.fromFile(f));
                 startActivity(Intent.createChooser(intentShare,"Share audio to..."));
                 break;
             case R.id.delete:
@@ -132,6 +143,13 @@ public class RecordingListActivity extends AppCompatActivity {
             case R.id.detail:
                 DialogDetail dialog = DialogDetail.newInstance(selectedAudioItem);
                 dialog.show(getFragmentManager(),"dialog");
+                break;
+            case R.id.mediaplayer:
+                Intent intentMediaPlayer = new Intent(RecordingListActivity.this, MediaPlayerActivity.class);
+                Bundle file = new Bundle();
+                file.putSerializable("file", selectedAudioItem);
+                intentMediaPlayer.putExtra("Package", file);
+                startActivity(intentMediaPlayer);
                 break;
         }
 
@@ -175,17 +193,23 @@ public class RecordingListActivity extends AppCompatActivity {
 
     void showRenameDialog() {
         // custom dialog
-        final Dialog dialog = new Dialog(context);
-        dialog.setContentView(R.layout.dialog_rename);
-        dialog.setTitle("................Rename.................");
-
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this.context);
+        View mView = getLayoutInflater().inflate(R.layout.dialog_rename,null);
         // set the custom dialog components - text, image and button
-        final TextView txtNewname = (TextView) dialog.findViewById(R.id.txtNewname);
+        final TextView txtNewname = (TextView) mView.findViewById(R.id.txtNewname);
         String[] tmp = selectedAudioItem.getFilename().split("\\.");
         txtNewname.setText(tmp[0]);
         txtNewname.setSelectAllOnFocus(true);
-        Button dialogButton = (Button) dialog.findViewById(R.id.btnOK);
-        // if button is clicked, close the custom dialog
+        //open anroid keyboard
+        InputMethodManager inputMethodManager =
+                (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+        Button dialogButton = (Button) mView.findViewById(R.id.btnOK);
+
+        builder.setView(mView);
+        final AlertDialog dialog = builder.create();
+        dialog.show();
+
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -195,8 +219,6 @@ public class RecordingListActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-
-        dialog.show();
     }
 
     void renameItem(int index, String newName){
@@ -210,6 +232,7 @@ public class RecordingListActivity extends AppCompatActivity {
             filename.setText(newName);
         //refreshVisibleViews();
         listviewItems.setAdapter(listviewItems.getAdapter());
+        invalidateOptionsMenu();
     }
 
     void refreshVisibleViews() {
@@ -228,7 +251,7 @@ public class RecordingListActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-       // getMenuInflater().inflate(R.menu.popup,menu);
+        // getMenuInflater().inflate(R.menu.popup,menu);
         return  true;
     }
 
@@ -251,6 +274,11 @@ public class RecordingListActivity extends AppCompatActivity {
         }
 
         return list;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 
     private void playAudio(String filePath) {
@@ -279,43 +307,14 @@ public class RecordingListActivity extends AppCompatActivity {
 
         int duration = this.player.getDuration();
         int currentPosition = player.getCurrentPosition();
-        if(currentPosition == 0) {
-            this.seekBar.setMax(duration);
-        }
 
         player.start();
         imageButtonPlayPause.setImageResource(R.drawable.pause50);
         isPlaying=true;
         isNewAudio=false;
 
-
-        //tao thread update seekbar
-        UpdateSeekbarThread updateSeekbarThread = new UpdateSeekbarThread();
-        threadHandler.postDelayed(updateSeekbarThread,50);
     }
-
-    class UpdateSeekbarThread implements Runnable {
-        public void run() {
-            int currentPosition = player.getCurrentPosition();
-            int duration = player.getDuration();
-            seekBar.setProgress(currentPosition);
-            threadHandler.postDelayed(this,50);
-
-            // chuyen trang thai nut pause sang play khi phat xong
-            if(duration-currentPosition<=50) {
-                player.reset();
-                imageButtonPlayPause.setImageResource(R.drawable.play50);
-
-                seekBar.setProgress(0);
-
-                isPlayed=true;
-
-                isPlaying=false;
-                isNewAudio=false;
-            }
-        }
-    }
-
+    private int currentPosition = 0;
     private void pauseAudio() {
         if(isPlaying) {
             player.pause();

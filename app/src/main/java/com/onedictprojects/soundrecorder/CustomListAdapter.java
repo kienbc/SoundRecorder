@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -57,7 +59,7 @@ public class CustomListAdapter extends BaseAdapter {
         holder.fileName.setText(item.getFilename());
 
         int imageId = this.getMipmapResById(item.getFileType());
-        holder.fileType.setImageResource(imageId);
+        //holder.fileType.setImageResource(imageId);
 
         return convertView;
     }

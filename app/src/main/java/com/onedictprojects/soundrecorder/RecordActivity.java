@@ -7,12 +7,15 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.os.Environment;
 import android.os.Handler;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +36,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Vector;
+import java.util.jar.Manifest;
 
 public class RecordActivity extends AppCompatActivity {
 
@@ -80,6 +84,36 @@ public class RecordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record);
+        /*-----------------Request permission at runtime--------------------*/
+        //RECORD_AUDIO: 1
+        if (ContextCompat.checkSelfPermission(RecordActivity.this,
+                android.Manifest.permission.RECORD_AUDIO)
+                != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(RecordActivity.this,
+                    new String[]{android.Manifest.permission.RECORD_AUDIO},
+                    1);
+        }
+
+        //WRITE_EXTERNAL_STORAGE: 2
+        if (ContextCompat.checkSelfPermission(RecordActivity.this,
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(RecordActivity.this,
+                    new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                    2);
+        }
+
+        //READ_EXTERNAL_STORAGE: 3
+        if (ContextCompat.checkSelfPermission(RecordActivity.this,
+                android.Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(RecordActivity.this,
+                    new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE},
+                    3);
+        }
 
         hour = (TextView) findViewById(R.id.txtHour);
         min = (TextView) findViewById(R.id.txtMin);

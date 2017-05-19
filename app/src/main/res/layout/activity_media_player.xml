@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mediaplayer_activity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.cleveroad.audiovisualization.GLAudioVisualizationView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/visualizer_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:av_backgroundColor="@color/colorAccent"
+            app:av_bubblesPerLayer="16"
+            app:av_bubblesRandomizeSizes="true"
+            app:av_bubblesSize="@dimen/bubble_size"
+            app:av_layersCount="3"
+            app:av_wavesCount="7"
+            app:av_wavesFooterHeight="@dimen/footer_height"
+            app:av_wavesHeight="@dimen/wave_height" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/text_view_margin"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/startText"
+                android:layout_toStartOf="@+id/endText" />
+
+            <TextView
+                android:id="@+id/endText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginEnd="@dimen/end_text_margin"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewMediaInfo"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@android:color/transparent"
+            android:text=" mashup - MTP ft. Tran Lam"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:visibility="visible"
+            android:gravity="center"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent">
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/buttonShowComments"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:src="@drawable/edit_icon"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_alignParentLeft="true"/>
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/buttonPlay"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:src="@drawable/circle_play_button"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/buttonNewComment"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:src="@drawable/add_icon"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
