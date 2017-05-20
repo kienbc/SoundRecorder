@@ -137,6 +137,7 @@ public class RecordingListActivity extends AppCompatActivity {
                 break;
             case R.id.rename:
                 showRenameDialog();
+                listviewItems.invalidateViews();
                 break;
             case R.id.sync:
                 break;
@@ -194,14 +195,14 @@ public class RecordingListActivity extends AppCompatActivity {
     void showRenameDialog() {
         // custom dialog
         final AlertDialog.Builder builder = new AlertDialog.Builder(this.context);
-        View mView = getLayoutInflater().inflate(R.layout.dialog_rename,null);
+        final View mView = getLayoutInflater().inflate(R.layout.dialog_rename,null);
         // set the custom dialog components - text, image and button
         final TextView txtNewname = (TextView) mView.findViewById(R.id.txtNewname);
         String[] tmp = selectedAudioItem.getFilename().split("\\.");
         txtNewname.setText(tmp[0]);
         txtNewname.setSelectAllOnFocus(true);
         //open anroid keyboard
-        InputMethodManager inputMethodManager =
+        final InputMethodManager inputMethodManager =
                 (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
         Button dialogButton = (Button) mView.findViewById(R.id.btnOK);
@@ -216,6 +217,8 @@ public class RecordingListActivity extends AppCompatActivity {
                 String strNewname = txtNewname.getText().toString() + "." + selectedAudioItem.getFileType();
                 selectedAudioItem.renameFile(strNewname);
                 renameItem(index, strNewname);
+                inputMethodManager.hideSoftInputFromWindow(mView.getWindowToken(), 0);
+                listviewItems.invalidateViews();
                 dialog.dismiss();
             }
         });

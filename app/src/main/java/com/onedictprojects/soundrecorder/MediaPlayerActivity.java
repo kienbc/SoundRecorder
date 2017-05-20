@@ -147,11 +147,13 @@ public class MediaPlayerActivity extends AppCompatActivity {
                 });
             }
         });
+
+        adapter = new CommentArrayAdapter(this, 0, commentProperties);
         btnShowComments = (CircleButton) findViewById(R.id.buttonShowComments);
         btnShowComments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                adapter = new CommentArrayAdapter(v.getContext(), 0, commentProperties);
+                commentProperties.clear();
                 commentProperties.addAll(loadCommentDataFromDB(audioItem.getFilename()));
                 final AlertDialog.Builder builder = new AlertDialog.Builder(v.getContext());
                 View mView = getLayoutInflater().inflate(R.layout.dialog_comments_listview,null);
