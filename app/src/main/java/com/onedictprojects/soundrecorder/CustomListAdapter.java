@@ -5,8 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -46,7 +44,7 @@ public class CustomListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if(convertView==null) {
-            convertView = layoutInflater.inflate(R.layout.list_item_layout,null);
+            convertView = layoutInflater.inflate(R.layout.list_audio_item_layout,null);
             holder=new ViewHolder();
             holder.fileType=(ImageView) convertView.findViewById(R.id.listitem_imageview_filetype);
             holder.fileName=(TextView) convertView.findViewById(R.id.listitem_textview_filename);

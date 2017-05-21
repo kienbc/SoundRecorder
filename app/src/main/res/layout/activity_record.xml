@@ -94,7 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/btnDelete"
-                        android:background="@drawable/round_dard_button"
+                        android:background="@color/colorAccent"
                         android:src="@drawable/delete64"
                         android:visibility="invisible"/>
 
@@ -114,11 +114,11 @@
                     android:gravity="bottom">
 
                     <ImageButton
-                        android:layout_width="64dp"
-                        android:layout_height="68dp"
-                        android:background="@drawable/round_dard_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
                         android:id="@+id/btnStop"
-                        android:src="@drawable/stop48"
+                        android:src="@drawable/stop64"
                         android:visibility="invisible"/>
                 </LinearLayout>
         </LinearLayout>

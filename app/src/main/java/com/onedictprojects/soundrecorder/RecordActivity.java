@@ -18,6 +18,8 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.telephony.PhoneStateListener;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Display;
 import android.view.Menu;
@@ -68,6 +70,9 @@ public class RecordActivity extends AppCompatActivity {
     private int secCounter = 0;
 
     Handler threadHandler = new Handler();
+    private TelephonyManager telephonyManager;
+    private PhoneStateListener phoneStateListener;
+
 
     // visualizer
 
@@ -173,6 +178,8 @@ public class RecordActivity extends AppCompatActivity {
         registerReceiver(receiver, filter);
 
         addNotification();
+
+        callStateListener();
 
         //========= Visualizer ============//
 
@@ -694,6 +701,37 @@ public class RecordActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Handle PhoneState changes
+     */
+    private void callStateListener() {
+        // Get the telephony manager
+        telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        //Starting listening for PhoneState changes
+        phoneStateListener = new PhoneStateListener() {
+            @Override
+            public void onCallStateChanged(int state, String incomingNumber) {
+                switch (state) {
+                    //if at least one call exists or the phone is ringing
+                    //pause the MediaPlayer
+                    case TelephonyManager.CALL_STATE_OFFHOOK:
+                    case TelephonyManager.CALL_STATE_RINGING:
+                        if(isRecording) {
+                            processPauseRecording();
+                            updateNotificationWhenUserTouchPause();
+                        }
+                        break;
+                    case TelephonyManager.CALL_STATE_IDLE:
+                        break;
+                }
+            }
+        };
+        // Register the listener with the telephony manager
+        // Listen for changes to the device call state.
+        telephonyManager.listen(phoneStateListener,
+                PhoneStateListener.LISTEN_CALL_STATE);
+    }
+
     /*-------------------Notification---------------------*/
     final int NOTIFICATION_ID = 0;
     android.support.v4.app.NotificationCompat.Builder builder;
@@ -732,9 +770,9 @@ public class RecordActivity extends AppCompatActivity {
         PendingIntent pendingPause = PendingIntent.getBroadcast(this, 0, newIntentPause, 0);
         PendingIntent pendingStop = PendingIntent.getBroadcast(this, 0, newIntentStop, 0);
         PendingIntent pendingCancel = PendingIntent.getBroadcast(this, 0, newIntentCancel, 0);
-        builder.addAction(R.drawable.pause50, "Pause", pendingPause);
-        builder.addAction(R.drawable.stop48, "Stop", pendingStop);
-        builder.addAction(R.drawable.delete64, "Cancel", pendingCancel);
+        builder.addAction(R.drawable.pause36, "Pause", pendingPause);
+        builder.addAction(R.drawable.stop36, "Stop", pendingStop);
+        builder.addAction(R.drawable.delete36, "Cancel", pendingCancel);
         // Add to status bar
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(NOTIFICATION_ID, builder.build());
@@ -748,7 +786,7 @@ public class RecordActivity extends AppCompatActivity {
         //thêm các button mới
         Intent newIntentStart = new Intent("START");
         PendingIntent pendingStart = PendingIntent.getBroadcast(this, 0, newIntentStart, 0);
-        builder.addAction(R.drawable.microphone48, "Start", pendingStart);
+        builder.addAction(R.drawable.microphone36, "Start", pendingStart);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(NOTIFICATION_ID, builder.build());
@@ -766,9 +804,9 @@ public class RecordActivity extends AppCompatActivity {
         PendingIntent pendingResume = PendingIntent.getBroadcast(this, 0, newIntentResume, 0);
         PendingIntent pendingStop = PendingIntent.getBroadcast(this, 0, newIntentStop, 0);
         PendingIntent pendingCancel = PendingIntent.getBroadcast(this, 0, newIntentCancel, 0);
-        builder.addAction(R.drawable.microphone48, "Resume", pendingResume);
-        builder.addAction(R.drawable.stop48, "Stop", pendingStop);
-        builder.addAction(R.drawable.delete64, "Delete", pendingCancel);
+        builder.addAction(R.drawable.microphone36, "Resume", pendingResume);
+        builder.addAction(R.drawable.stop36, "Stop", pendingStop);
+        builder.addAction(R.drawable.delete36, "Delete", pendingCancel);
 
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(NOTIFICATION_ID, builder.build());
@@ -787,5 +825,13 @@ public class RecordActivity extends AppCompatActivity {
         builder.setContentText(content);
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(NOTIFICATION_ID, builder.build());
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (phoneStateListener != null) {
+            telephonyManager.listen(phoneStateListener, PhoneStateListener.LISTEN_NONE);
+        }
+        super.onDestroy();
     }
 }
