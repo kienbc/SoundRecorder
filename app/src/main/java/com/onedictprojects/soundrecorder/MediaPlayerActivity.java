@@ -267,7 +267,7 @@ public class MediaPlayerActivity extends AppCompatActivity {
                     if(player.isMediaStop) return null;
                     Long output = Long.valueOf(player.mediaPlayer.getCurrentPosition());
                     publishProgress(output);
-                    Log.d("abc", String.valueOf(output/1000));
+                    Log.d("playing", String.valueOf(output/1000));
                     Thread.sleep(200);
                 }
             } catch (Exception e) {
@@ -299,7 +299,6 @@ public class MediaPlayerActivity extends AppCompatActivity {
             serviceBound = true;
             updateDuration();
             audioVisualization.onResume();
-            updatePlayButtonIcon();
         }
 
         @Override

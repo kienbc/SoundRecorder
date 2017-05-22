@@ -3,7 +3,7 @@ package com.onedictprojects.soundrecorder;
 import java.io.Serializable;
 
 /**
- * Created by My-PC on 5/18/2017.
+ *       Easy Record_1.0_1412265_1412317
  */
 
 public class MyComment implements Serializable{

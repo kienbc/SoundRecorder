@@ -30,7 +30,7 @@ public class MediaPlayerService extends Service implements MediaPlayer.OnComplet
     private String mediaFile;
     //Used to pause/resume MediaPlayer
     private int resumePosition;
-
+    //        Easy Record_1.0_1412265_1412317
     public static final String ACTION_PLAY = "ACTION_PLAY";
     public static final String ACTION_PAUSE = "ACTION_PAUSE";
     public static final String ACTION_PREVIOUS = "ACTION_PREVIOUS";

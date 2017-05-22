@@ -12,6 +12,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,6 +43,7 @@ public class RecordingListActivity extends AppCompatActivity {
 
     ImageButton imageButtonPlayPause;
     TextView textViewFileNamePlaying = null;
+    TextView getTextViewFileNamePlayingSize;
     Handler threadHandler = new Handler();
 
     boolean isPlaying = false;
@@ -57,30 +59,21 @@ public class RecordingListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recording_list);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mpLayout = (LinearLayout) findViewById(R.id.mediaPlayerLayout);
-        mpLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentMediaPlayer = new Intent(RecordingListActivity.this, MediaPlayerActivity.class);
-                Bundle file = new Bundle();
-                file.putSerializable("file", selectedAudioItem);
-                intentMediaPlayer.putExtra("Package", file);
-                startActivity(intentMediaPlayer);
-            }
-        });
+//        mpLayout = (LinearLayout) findViewById(R.id.mediaPlayerLayout);
+//        mpLayout.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intentMediaPlayer = new Intent(RecordingListActivity.this, MediaPlayerActivity.class);
+//                Bundle file = new Bundle();
+//                file.putSerializable("file", selectedAudioItem);
+//                intentMediaPlayer.putExtra("Package", file);
+//                startActivity(intentMediaPlayer);
+//            }
+//        });
 
         imageButtonPlayPause = (ImageButton) findViewById(R.id.imageButton_playPause);
         textViewFileNamePlaying= (TextView) findViewById(R.id.textView_filenamePlaying);
-        imageButtonPlayPause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(isPlaying) {
-                    pauseAudio();
-                }
-                else playAudio(currentAudioFilePath);
-            }
-        });
-
+        getTextViewFileNamePlayingSize = (TextView) findViewById(R.id.textViewFilenamePlayingSize);
         itemsList = getAllFileName();
         listviewItems = (ListView) findViewById(R.id.lvRecording);
         adapter = new CustomListAdapter(itemsList,this);
@@ -94,8 +87,8 @@ public class RecordingListActivity extends AppCompatActivity {
                 AudioItem item = (AudioItem) o;
                 currentAudioFilePath = item.getPath();
                 isNewAudio = true;
-                textViewFileNamePlaying.setText(item.getFilename());
-                playAudio(currentAudioFilePath);
+                textViewFileNamePlaying.setText(item.getFilename() + "   " + item.getDuration());
+                getTextViewFileNamePlayingSize.setText(item.getSize());
             }
         });
         listviewItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -137,7 +130,7 @@ public class RecordingListActivity extends AppCompatActivity {
                 break;
             case R.id.rename:
                 showRenameDialog();
-                listviewItems.invalidateViews();
+
                 break;
             case R.id.sync:
                 break;
@@ -216,6 +209,7 @@ public class RecordingListActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String strNewname = txtNewname.getText().toString() + "." + selectedAudioItem.getFileType();
                 selectedAudioItem.renameFile(strNewname);
+                renameNoteFile(selectedAudioItem.getFilename(), strNewname);
                 renameItem(index, strNewname);
                 inputMethodManager.hideSoftInputFromWindow(mView.getWindowToken(), 0);
                 listviewItems.invalidateViews();
@@ -226,16 +220,20 @@ public class RecordingListActivity extends AppCompatActivity {
 
     void renameItem(int index, String newName){
         //View v = listviewItems.getChildAt(index - listviewItems.getFirstVisiblePosition());
-        View v = listviewItems.getChildAt(index);
-        if(v == null)
-            return;
-
-        TextView filename = (TextView) v.findViewById(R.id.listitem_textview_filename);
-        if(filename != null)
-            filename.setText(newName);
-        //refreshVisibleViews();
-        listviewItems.setAdapter(listviewItems.getAdapter());
-        invalidateOptionsMenu();
+//        View v = listviewItems.getChildAt(index);
+//        Log.d("INDEX_ITEM",String.valueOf(index));
+//        if(v == null) {
+//            Log.d("ITEM","not found");
+//            return;
+//        }
+//
+//        TextView filename = (TextView) v.findViewById(R.id.listitem_textview_filename);
+//        if(filename != null)
+//            filename.setText(newName);
+//        refreshVisibleViews();
+        itemsList = getAllFileName();
+        adapter = new CustomListAdapter(itemsList,this);
+        listviewItems.setAdapter(adapter);
     }
 
     void refreshVisibleViews() {
@@ -324,5 +322,29 @@ public class RecordingListActivity extends AppCompatActivity {
             isPlaying=false;
             imageButtonPlayPause.setImageResource(R.drawable.play50);
         }
+    }
+
+    public void renameNoteFile(String oldName, String newName) {
+        String[] tmp = oldName.split("\\.");
+        String path = getFolderPath() + File.separator + tmp[0] + ".bin";
+        File from = new File(path);
+        String parentDirectory = from.getParent();
+        String[] tmp2 = newName.split("\\.");
+        String newNameWithExt = tmp2[0] + ".bin";
+        File to = new File(parentDirectory, newNameWithExt);
+        if(from.exists())
+            from.renameTo(to);
+
+    }
+
+    public static final String AUDIO_RECORDER_NOTE_FOLDER = "SoundRecorderNote";
+    private String getFolderPath() {
+        String filepath = Environment.getExternalStorageDirectory().getAbsolutePath();
+        File folder = new File(filepath, AUDIO_RECORDER_NOTE_FOLDER);
+        if(!folder.exists()) {
+            folder.mkdir();
+        }
+
+        return folder.getAbsolutePath();
     }
 }

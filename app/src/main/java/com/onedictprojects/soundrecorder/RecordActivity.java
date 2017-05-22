@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
@@ -16,6 +17,7 @@ import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.PhoneStateListener;
@@ -25,7 +27,9 @@ import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +41,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Vector;
 import java.util.jar.Manifest;
 
@@ -47,13 +54,11 @@ public class RecordActivity extends AppCompatActivity {
     public static final String AUDIO_RECORDER_FOLDER = "SoundRecorder";
     private static final String AUDIO_RECORDER_TEMP_FOLDER = "SoundTemp";
     private static final String AUDIO_RECORDER_TEMP_EXT_FILE = ".raw";
-    private static final int RECORDER_SAMPLERATE = 44100;
+    private static int RECORDER_SAMPLERATE = 44100;
     private static final int RECORDER_CHANNELS = AudioFormat.CHANNEL_IN_STEREO;
     private static final int RECORDER_AUDIO_ENCODING = AudioFormat.ENCODING_PCM_16BIT;
-
-
+    //        Easy Record_1.0_1412265_1412317
     byte[] data = null;
-
     private AudioRecord recorder = null;
     private int bufferSize = 0;
     private Thread recordingThread = null;
@@ -323,11 +328,51 @@ public class RecordActivity extends AppCompatActivity {
         }
 
         if(id==R.id.mnSettings) {
+            if(!isRecording) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Recording quality")
+                        .setItems(R.array.audioQualityArray, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // The 'which' argument contains the index position
+                                // of the selected item
+                                switch (which) {
+                                    case 0:
+                                        RECORDER_SAMPLERATE = 8000;
+                                        Toast.makeText(getApplication(), "Recording Quality: 8000Hz", Toast.LENGTH_LONG).show();
+                                        break;
+                                    case 1:
+                                        RECORDER_SAMPLERATE = 16000;
+                                        Toast.makeText(getApplication(), "Recording Quality: 16000Hz", Toast.LENGTH_LONG).show();
+                                        break;
+                                    case 2:
+                                        RECORDER_SAMPLERATE = 22050;
+                                        Toast.makeText(getApplication(), "Recording Quality: 22050Hz", Toast.LENGTH_LONG).show();
+                                        break;
+                                    case 3:
+                                        RECORDER_SAMPLERATE = 44100;
+                                        Toast.makeText(getApplication(), "Recording Quality: 41000Hz", Toast.LENGTH_LONG).show();
+                                        break;
+                                }
+                                dialog.dismiss();
+                            }
+                        });
 
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
         }
 
         if(id==R.id.mnAbout) {
+            // 1. Instantiate an AlertDialog.Builder with its constructor
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
+            // 2. Chain together various setter methods to set the dialog characteristics
+            builder.setMessage("Easy Record 1.0\n\n1412265 - Bùi Chí Kiên\n1412317 - Đặng Nhật Minh")
+                    .setTitle("About");
+
+            // 3. Get the AlertDialog from create()
+            AlertDialog dialog = builder.create();
+            dialog.show();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -727,6 +772,7 @@ public class RecordActivity extends AppCompatActivity {
             }
         };
         // Register the listener with the telephony manager
+//        Easy Record_1.0_1412265_1412317
         // Listen for changes to the device call state.
         telephonyManager.listen(phoneStateListener,
                 PhoneStateListener.LISTEN_CALL_STATE);

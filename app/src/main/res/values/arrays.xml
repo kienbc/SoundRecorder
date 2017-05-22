@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--Easy Record_1.0_1412265_1412317-->
+<resources>
+    <string-array name="audioQualityArray">
+        <item>8000 Hz</item>
+        <item>16000 Hz</item>
+        <item>22050 Hz</item>
+        <item>44100 Hz</item>
+    </string-array>
+</resources>
